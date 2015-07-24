@@ -1,0 +1,44 @@
+<!-- The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices. For many applications, the flexible box model provides an improvement over the block model in that it does not use floats, nor do the flex container's margins collapse with the margins of its contents.  -->
+
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+<!-- http://codepen.io/devtips/pen/JorKGm/?editors=110 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body {
+		margin: 0px;
+	}
+	body > div { display: flex; flex-flow: row wrap;
+	}
+	body > div > header,nav,main,aside,footer{
+		background: #ccc; border-radius: 7px; margin: 5px; padding: 20px;
+	}
+	body > div > header{ order: 1; height: 100px; flex: 0 1 100%;
+	}
+	body > div > nav{ order: 2; flex: 0 1 200px;
+	}
+	body > div > main { order: 3; min-height: 250px; flex: 1;
+	}
+	body > div > aside{ order: 4; flex: 0 1 200px;
+	}
+	body > div > footer { order: 5; height: 100px; flex: 0 1 100%;
+	}
+	</style>
+</head>
+<!-- html5 layout using flex -->
+<body>
+
+	<div><!--flex container / flex box -->
+		<header>Header</header><!--flex items -->
+		<nav>Navigation</nav><!--flex items -->
+		<main>Main</main><!--flex items -->
+		<aside>Aside</aside><!--flex items -->
+		<footer>Footer</footer><!--flex items -->
+	</div>
+	
+</body>
+</html>

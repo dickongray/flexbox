@@ -1,0 +1,26 @@
+header, header nav, header nav ul, .shots, .shots .meta {
+  display: flex;
+}
+header {
+  justify-content: space-between; /* seperates the nav and search box*/
+}
+header nav {
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header {
+  align-items: center;
+}
+header {
+  margin: 0 20px;
+}
+.shots {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shots .meta {
+  justify-content: flex-end;
+}
+

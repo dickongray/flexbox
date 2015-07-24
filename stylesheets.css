@@ -1,0 +1,89 @@
+/* some default styles to make each box visible */
+	.box{ color: white; font-size: 100px; text-align: center; text-shadow: 4px 4px 0 #999;}
+
+	.box p { font-size: 20px;	}
+
+/* colours for each box */
+
+	.box1  {background-color: #1abc9c}
+	.box2  {background-color: #3498db}
+	.box3  {background-color: #9b59b6}
+	.box4  {background-color: #43395e}
+	.box5  {background-color: #f1c40f}
+	.box6  {background-color: #e67e22}
+	.box7  {background-color: #e74c3c}
+	.box8  {background-color: #bdc3c7}
+	.box9  {background-color: #2ecc71}
+	.box10 {background-color: #16a085}
+
+/* flex start here the above is just page content */
+
+/* justify-content (X-axis-left-right) and align-items (y-axis-top-bottom)
+and align-content(applies to items when they wrap and on the Y-axis)*/
+
+/* */
+
+.wrapper {
+	display: flex; /* */
+	width: 80%;
+	height: 500px; /**/
+	border: 10px solid black;
+	margin: 0 auto;
+	flex-direction:column;
+	flex-wrap: wrap; /* by default no wrap*/
+	/* justify-content: flex-start; this is default*/
+	/* justify-content: flex-end; starts at the end*/
+	/* justify-content: flex-center; centers all child properties*/
+	/* justify-content: space-between; even spaces between the content 
+	and moves container 1 and 10 to the ends */
+	/* justify-content: space-around; centers all child properties 
+	using half of the sapce-between at each end*/
+	/*align-items: flex-start; this is default*/
+	/*align-items: flex-end; starts at the end*/
+	/*align-items: flex-center; centers all child properties*/
+	/*align-items: flex-stretch; remove height and it will stretch*/
+	/*align-items: flex-baseline; all items are aligned to the same base line
+	to show this revale box3*/
+	/*align-content: stretch; is the default*/
+	/*align-content: center; centers all content */
+	/*align-content: flex-start; this is default*/
+	/*align-content: flex-end; starts at the end*/
+	/*align-content: space-around; centers all child properties 
+	using half of the sapce-between at each end*/
+	/*align-content: space-between; even spaces between the content 
+	and moves container 1 and 10 to the ends */
+}
+
+.box {
+	flex: 1; 
+	min-width: 25%;
+	min-height: 100px;
+}
+
+/*EVERYTHING BELOW HERE IS NOT IN USE*/ 
+/*.box3{
+	font-size: 80px;
+}*/
+
+/* flex grow, controls the ratio each indvidual item */
+
+.box4{
+	flex-grow: 7;
+}
+
+/* flex shrink, control the ratio each indvidual item when their is not enough room*/
+
+.box7{
+	flex-shrink: 3;
+}
+
+/* flex basis, sets a starting place before it felx's*/
+
+.box8{
+	flex-basis: 19px;
+}
+/* align-self, defualt is flex-start*/
+
+.box9{
+	align-self: flex-center;
+}

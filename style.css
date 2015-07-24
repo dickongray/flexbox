@@ -1,0 +1,61 @@
+/* some default styles to make each box visible */
+	.box{ color: white; font-size: 100px; text-align: center; text-shadow: 4px 4px 0 #999;}
+
+	.box p { font-size: 20px;	}
+
+/* colours for each box */
+
+	.box1  {background-color: #1abc9c}
+	.box2  {background-color: #3498db}
+	.box3  {background-color: #9b59b6}
+	.box4  {background-color: #43395e}
+	.box5  {background-color: #f1c40f}
+	.box6  {background-color: #e67e22}
+	.box7  {background-color: #e74c3c}
+	.box8  {background-color: #bdc3c7}
+	.box9  {background-color: #2ecc71}
+	.box10 {background-color: #16a085}
+
+/* flex start here the above is just page content */
+
+/* flex intro and basics - row, columns, size of box */
+
+/* Build page. Them show = flex 1 first, then show flex 2 and flex 4 to show boxes size. 
+Then show column and revese colum*/
+ 
+.wrapper {
+	display: flex; /* flex is a new property - */
+}
+/* By defualt flex direction is row - */
+/*
+.wrapper {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column; 
+}
+*/
+/* This is purely visual - does not effect the HTML so in dev tools 
+- also works for row for example row-reverse */
+/*
+.wrapper {
+	display: flex;
+	-webkit-flex-direction: column-reverse; 
+	-moz-flex-direction: column-reverse; 
+	-ms-flex-direction: column-reverse; 
+	-o-flex-direction: column-reverse; 
+	flex-direction: column-reverse; 
+}
+*/
+.box {
+	flex: 1; /* This number is a portion compared to the others. 
+	So it's not a px, or an em value. For example this number could be 100 */
+}
+.box3{
+	 /* flex: 2;. This will make box 3 double the size of all the others- */
+}
+.box6{
+	/* flex: 4; ,This will make box 4 double the size of all the others- */
+}
